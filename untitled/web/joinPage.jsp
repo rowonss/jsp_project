@@ -1,32 +1,32 @@
 <%--
   Created by IntelliJ IDEA.
   User: user
-  Date: 2023-03-29
-  Time: 오전 9:46
+  Date: 2023-03-30
+  Time: 오전 8:58
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page import="java.util.Calendar" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
 
-<form name="loginform" action="loginAction.jsp" method="post">
+<form name="joinform" action="joinAction.jsp" method="post">
     <div class="loginBox">
         <div class="loginText">로그인</div>
         <label>
             <input class="idPass" type="text" placeholder="아이디" name="userId">
-            <input class="idPass"  type="password" placeholder="비밀번호" name="userPassword">
+            <input class="idPass" type="password" placeholder="비밀번호" name="userPassword">
+            <input class="idPass" type="text" placeholder="이름" name="userName">
+            <input class="idPass" type="text" placeholder="이름" name="userName">
+            <input class="idPass" type="text" placeholder="이름" name="userName">
         </label>
-        <div class="loginButton" onclick="document.loginform.submit()">로그인</div>
+        <div class="loginButton" onclick="document.joinform.submit()">로그인</div>
     </div>
 </form>
 
-
 </body>
-</html>
 
 <style>
     @font-face {
@@ -52,12 +52,14 @@
         margin-right: auto;
         text-align: center;
     }
+
     .idPass {
         display: block;
         margin: 5px auto;
         width: 250px;
         height: 30px;
     }
+
     .loginButton {
         font-family: 'KCC-Ganpan';
         border: 1px solid black;
@@ -68,3 +70,6 @@
         text-align: center;
     }
 </style>
+
+</html>
+
