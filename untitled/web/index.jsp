@@ -7,6 +7,14 @@
 --%>
 <%@ page import="java.util.Calendar" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix ="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix ="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
+<%@taglib prefix ="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@taglib prefix ="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
+
+
+
 <html>
 <head>
     <title>$Title$</title>
@@ -23,6 +31,9 @@
         <div class="loginButton" onclick="document.loginform.submit()">로그인</div>
     </div>
 </form>
+<button style="margin-left: auto; margin-right: auto" onclick="location.href='joinPage.jsp'">회원가입</button>
+
+<c:out value="world" />
 
 
 </body>
