@@ -14,15 +14,16 @@
 
 <form name="joinform" action="joinAction.jsp" method="post">
     <div class="loginBox">
-        <div class="loginText">로그인</div>
+        <div class="loginText">회원가입</div>
         <label>
             <input class="idPass" type="text" placeholder="아이디" name="userId">
             <input class="idPass" type="password" placeholder="비밀번호" name="userPassword">
             <input class="idPass" type="text" placeholder="이름" name="userName">
-            <input class="idPass" type="text" placeholder="이름" name="userName">
-            <input class="idPass" type="text" placeholder="이름" name="userName">
+            <input style="margin-right: auto; margin-left: auto; display: inline" type="radio" name="userGender" value="male">
+            <input style="margin-right: auto; margin-left: auto; display: inline" type="radio" name="userGender" value="female">
+            <input class="idPass" type="text" placeholder="이메일" name="userEmail">
         </label>
-        <div class="loginButton" onclick="document.joinform.submit()">로그인</div>
+        <div class="loginButton" onclick="document.joinform.submit()">가입 확인</div>
     </div>
 </form>
 
